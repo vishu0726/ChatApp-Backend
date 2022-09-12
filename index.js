@@ -4,7 +4,7 @@ const cors = require('cors');
 const socketIO = require('socket.io');
 
 const app = express();
-const port = 4500 || process.env.PORT; // if 4500 is not available then whoever online port which will be took
+const port = process.env.PORT; // if 4500 is not available then whoever online port which will be took
 
 const user = [{}];
 app.use(cors()); //cors is use to inter communication between url
